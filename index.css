@@ -1,19 +1,60 @@
-.grid-container{
+.grid-container {
     display: grid;
     grid: repeat(2, 60px) / auto-flow 80px;
-    background-color: pink
-  }  
+    background-color: palevioletred;
+}
 
-.grid-container > div {
-    background-color: lavender;
-    width: 50px;
-    height: 50px;
+.grid-container>div {
+    background-color: pink;
+    width: 1in;
+    height: 1in;
 }
 
 .dot {
-    height: 25px;
-    width: 25px;
-    background-color: lightgrey;
+    height: 45px;
+    width: 45px;
+    background-color: lavender;
     border-radius: 50%;
     display: inline-block;
-  }
+    margin: 20px;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid lightblue;
+    margin: 20px;
+}
+
+body {
+    background-color: green;
+}
+
+.box1 {
+    z-index: 1;
+}
+
+.box2 {
+    z-index: 3;
+}
+
+@media (max-width:1050px) {
+    .grid-container{
+        margin:0 auto !important;
+        padding:0 auto !important;
+    }
+}
+
+form {
+    color: white;
+}
+
+h2{
+    color: white; 
+}
+
+h5{
+    color: white;
+}
